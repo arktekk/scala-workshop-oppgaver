@@ -1,0 +1,33 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Scala Workshop - Meldingsserver</title>
+</head>
+<body class="lift:content_id=real_content">
+  <div class="lift:surround?with=default;at=content" id="real_content">
+
+    <div class="span-18 prepend-1 append-1 prepend-top last">
+      <div class="lift:form.ajax">
+        <div class="lift:meldingsSender.send">
+          <label for="melding">Melding: </label>
+          <input id="melding" type="text"/>
+          <input type="submit" value="Send"/>
+        </div>
+      </div>
+    </div>
+
+    <hr/>
+
+    <div class="span-18 prepend-1 append-1 prepend-top last">
+      <div class="lift:comet?type=MeldingsListe">
+        <h3>Meldinger</h3>
+        <ul>
+          <li>Melding 1</li>
+          <li class="clearable">Melding 2</li>
+          <li class="clearable">Melding 3</li>
+          <li class="clearable">Melding 4</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
