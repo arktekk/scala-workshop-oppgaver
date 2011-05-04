@@ -4,3 +4,5 @@ project/*.iml
 .idea
 *.iml
 lib_managed
+project/plugins/project/
+project/plugins/src_managed/

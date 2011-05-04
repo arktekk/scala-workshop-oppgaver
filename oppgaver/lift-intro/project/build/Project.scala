@@ -1,6 +1,6 @@
 import sbt._
 
-class Project(info:ProjectInfo) extends DefaultWebProject(info){
+class Project(info:ProjectInfo) extends DefaultWebProject(info) with IdeaProject {
   
   override def libraryDependencies = Set(
     "net.liftweb" %% "lift-webkit" % "2.3" % "compile->default" withSources,
