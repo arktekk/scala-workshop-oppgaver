@@ -1,7 +1,7 @@
 Oppgave: Lift - Intro
 =====================
 
-I denne oppgaven skal vi utvikle en enkel meldingsserver. Brukere skal kunne sende meldinger til en felles meldingsliste, som er tilgjengelig for alle innloggede brukere.
+I denne oppgaven skal vi utvikle en enkel meldingsserver. Brukere skal kunne sende meldinger til en felles meldingsliste, som er tilgjengelig for alle brukere.
 
 Ta utgangspunkt i det skjelettet av en Lift-applikasjon som allerede ligger her.
 
@@ -15,24 +15,23 @@ Mål
 * Enkel input validering
 * Konfigurere SiteMap
 * Konfigurere opp snippets
-* Tilgangskontroll
 * Lage en Comet actor
 
 Del 1
 -----
 Start med å verifiser at applikasjonen kjører som forventet. I sbt, kjør `jetty-run`. Applikasjonen er tilgjengelig på `http://localhost:8080`
 
-Det første vi skal gjøre er å sørge for at brukere må identifisere seg. 
+Det første vi skal gjøre er å sørge for at brukere må identifisere seg. Vi skal implementere en slags innlogging.
 
-1. Lag en innloggingsside og tilhørende snippet. Brukere skal identifisere seg med et brukernavn (nick) og fullt navn. 
+1. Lag en egen side hvor brukere skal identifisere seg, med tilhørende snippet. Brukere skal identifisere seg med et brukernavn (nick) og fullt navn. 
 2. Konfigurer opp denne siden i SiteMap'et
 3. Konfigurer opp automatisk lokalisering av snippets i Boot
-4. Sørg for at man kun kan nå `/index` hvis man har identifisert seg (/logget inn)
+4. Sørg for at man kun kan nå `/index` hvis man har identifisert seg
 
 Tips:
 
 * En bruker kan representeres med en case class
-* Bruk en SessionVar for å holde på innlogget bruker
+* Bruk en SessionVar for å holde på en bruker som har identifisert seg
 * LiftRules.addToPackages
 * LocParam 
 
@@ -60,9 +59,9 @@ Del 3 - Bonusoppgaver
 ---------------------
 Her har dere noen ekstra nøtter å bryne dere på. Kan løses i hvilken som helst rekkefølge.
 
-1. Vis kun de 10 siste meldingene i listen og vis de sortert etter nyest øverst
-2. Det skal være mulig å logge ut igjen. Vis på siden innlogget bruker og implementer funksjonalitet for å logge ut
-3. Brukere skal kunne endre brukernavn. Dere kan gjenbruke innlogginssiden. Hvis en bruker endrer brukernavn skal det sendes en notifikasjon til meldingsserveren. Dette skal vises til de andre brukerne i meldingslisten
+1. Vis kun de 10 siste meldingene i listen og vis de sortert etter nyeste øverst
+2. Det skal være mulig å logge ut igjen. Vis på forsiden informasjon om innlogget/identifisert bruker og implementer funksjonalitet for å logge ut
+3. Brukere skal kunne endre brukernavn. Dere kan gjenbruke identifiseringssiden. Hvis en bruker endrer brukernavn skal det sendes en notifikasjon til meldingsserveren. Dette skal vises til de andre brukerne i meldingslisten
 4. Når en bruker logger inn skal de andre brukerne få beskjed om dette. Dette skal vises til de andre brukerne i meldingslisten
 5. Vi har gått i den vanlige fella med å hardkode norsk strenger i koden vår. Nå er det snakk om World Domination, og vi trenger internasjonlisering. Implementer i18n støtte. 
 7. En "liten" nøtt til slutt: Implementer chat rooms
