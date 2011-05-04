@@ -25,14 +25,12 @@ Det første vi skal gjøre er å sørge for at brukere må identifisere seg. Vi 
 
 1. Lag en egen side hvor brukere skal identifisere seg, med tilhørende snippet. Brukere skal identifisere seg med et brukernavn (nick) og fullt navn. 
 2. Konfigurer opp denne siden i SiteMap'et
-3. Konfigurer opp automatisk lokalisering av snippets i Boot
-4. Sørg for at man kun kan nå `/index` hvis man har identifisert seg
+3. Sørg for at man kun kan nå `/index` hvis man har identifisert seg
 
 Tips:
 
 * En bruker kan representeres med en case class
 * Bruk en SessionVar for å holde på en bruker som har identifisert seg
-* LiftRules.addToPackages
 * LocParam 
 
 Del 2
