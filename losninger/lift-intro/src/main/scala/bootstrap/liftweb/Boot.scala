@@ -17,8 +17,8 @@ class Boot {
     )
 
     def sitemap = List(
-      Menu("index") / "index" >> Hidden >> KreverInnlogging,
-      Menu("login") / "login" >> Hidden
+      Menu("index") / "index" >> KreverInnlogging,
+      Menu("login") / "login"
     )
 
     LiftRules.addToPackages("meldingsserver")
