@@ -1,6 +1,7 @@
 package meldingsserver
 package snippet
 
+import LogIn.InnloggetBruker
 import net.liftweb.util.Helpers._
 import net.liftweb.http.{S, SHtml, DispatchSnippet}
 import net.liftweb.http.js.JsCmds._
@@ -22,11 +23,11 @@ object MeldingsSender extends DispatchSnippet {
         S.error("Meldingen kan max være 140 tegn.")
         Noop
       } else {
-        innloggetBruker.foreach(b => MeldingsServer ! Melding(melding, b))
+        InnloggetBruker.foreach(b => MeldingsServer ! Melding(melding, b))
         SetValById("melding", "")
       }
     }
 
-    "#melding"  #> (SHtml.text("", melding = _, "id" -> "melding") ++ SHtml.hidden(onSubmit))
+    "#melding" #> (SHtml.text("", melding = _, "id" -> "melding") ++ SHtml.hidden(onSubmit))
   }
 }

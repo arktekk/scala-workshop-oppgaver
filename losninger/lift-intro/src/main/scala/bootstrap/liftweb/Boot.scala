@@ -1,6 +1,6 @@
 package bootstrap.liftweb
 
-import meldingsserver.snippet.innloggetBruker
+import meldingsserver.snippet.LogIn.InnloggetBruker
 import net.liftweb.sitemap.{SiteMap, Menu, Loc}
 import Loc._
 import net.liftweb.http.{NoticeType, RedirectResponse, LiftRules}
@@ -12,7 +12,7 @@ class Boot {
   def boot {
 
     val KreverInnlogging = If(
-      () => innloggetBruker.isDefined,
+      () => InnloggetBruker.isDefined,
       () => RedirectResponse("/login")
     )
 
