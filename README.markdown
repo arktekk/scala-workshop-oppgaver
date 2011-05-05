@@ -16,4 +16,5 @@ Under er noen vanlig sbt-kommandoer.
 * jetty-stop
 * jetty-restart
 * prepare-webapp (Oppdater web-ressurser (html, css, ...) for en kjørende Jetty-instans. Du slipper å restarte Jetty)
+* console (Starter Scala REPL med prosjektets dependencies på classpath)
 * exit
