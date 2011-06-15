@@ -34,29 +34,28 @@ Nå skal vi se nærmere på Map i Scala, og hvordan denne bruker Option for å s
 Vi skal jobbe med noen sultne dyr, sjekke hva de sier og hva de spiser. Vi tar utgangspunkt i en full suite av tester, og skal implementere tjenesten SultneDyr.
 
 1) I klassen oppgave2.SultneDyr er det et sett av metoder som ikke er ferdig implementert. Det står beskrevet i kommentarer hva de er ment å gjøre. Se også på test suiten oppgave2.SultneDyrSuite
-2) Oppgaven er ferdig når alle testene i SultneDyrSuite kjører grønt
+2) Kjør testene med `test-only oppgave2.SultneDyrSuite`. Oppgaven er ferdig når alle testene kjører grønt
 
 Diskusjonspunkter:
 
 * Option vs null
 * Hva har dette å si for typesikkerheten?
 
-Oppgave 2 - Lister
+Oppgave 3 - Lister
 -----
 I denne oppgaven skal vi utforske Scala's rike collection-rammeverk. Som en del av dette skal vi jobbe med higher-order functions; funksjoner som tar funksjoner. Vi skal lete etter "idiomatiske" løsninger på problemene. Collection-rammeverket har mye å by på, og det er ofte en enklere måte å løse problemet på enn du kanskje først antar.
 
-Vi skal ta utgangspunkt i et sett av tester, som dessverre ikke kjører som de skal. 
+Vi skal ta utgangspunkt i et sett av tester, som dessverre ikke kjører. Målet er å få testene til å kjøre grønt.
 
-1) Testene kan kjøres med `test-only oppgave2.ListerSuite`
-2) Løs oppgavene som er definert i oppgave2.ListerSuite
+1) Testene kan kjøres med `test-only oppgave3.ListerSuite`
+2) Løs oppgavene som er definert i oppgave3.ListerSuite
 
 Tips:
 
 * I hver test ligger det en imperativ variant av løsningen
 * http://www.scala-lang.org/api/current/index.html#scala.collection.immutable.List
 
-Oppgave 3 - For Comprehensions
------
-Nå skal vi se på Scala's for expression, kalt for comprehensions. Dette er en rikere variant enn Java's, som i praksis vil kunne brukes for samme resultat som flatMap.
+Diskusjonspunkter:
 
-Vi beveger oss inn i matematikkens verden, og skal løse et problem basert på Pytagoras 
+* Funksjonell vs imperativ 
+* Immutable vs mutable
