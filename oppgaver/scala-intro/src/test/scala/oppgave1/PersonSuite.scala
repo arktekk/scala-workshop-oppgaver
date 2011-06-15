@@ -6,7 +6,7 @@ import matchers.ShouldMatchers
 /**
  * kommenter inn testene
  */
-class Oppgave1 extends FunSuite with ShouldMatchers {
+class PersonSuite extends FunSuite with ShouldMatchers {
   test("a) person"){
     val person = new Person("A")
     person.name should be("A")

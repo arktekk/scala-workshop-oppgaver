@@ -1,4 +1,4 @@
-package patternmatch
+package oppgave5
 
 import org.scalatest._
 import matchers.ShouldMatchers

@@ -1,4 +1,4 @@
-package oppgave2
+package oppgave3
 
 import org.scalatest._
 import matchers.ShouldMatchers

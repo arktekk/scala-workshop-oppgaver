@@ -1,4 +1,4 @@
-package oppgave5
+package oppgave6
 
 sealed trait Ansatt
 case class Utvikler(navn:String, lønn:Int) extends Ansatt

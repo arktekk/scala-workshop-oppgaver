@@ -1,4 +1,4 @@
-package oppgave4
+package oppgave2
 
 /**
  * e.g
@@ -15,7 +15,7 @@ package oppgave4
  *    def map[B](f:A => B):Option[B]
  *
  */
-class Oppgave4(dyretSier:Map[String, String], berOmMat:Map[String, String]) {
+class SultneDyr(dyretSier:Map[String, String], berOmMat:Map[String, String]) {
   // returner 'Some' med hva dyret sier om det finnes, eller 'None' hvis det ikke finnes"
   def hvaSier(dyr:String):Option[String] = // sys.error("todo")
     dyretSier.get(dyr)

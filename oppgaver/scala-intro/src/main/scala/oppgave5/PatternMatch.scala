@@ -1,4 +1,4 @@
-package patternmatch
+package oppgave5
 
 sealed trait Tree
 case class Branch(left:Tree, right:Tree) extends Tree
