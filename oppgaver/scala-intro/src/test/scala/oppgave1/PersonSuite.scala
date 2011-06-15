@@ -5,12 +5,12 @@ import matchers.ShouldMatchers
 
 class PersonSuite extends FunSuite with ShouldMatchers {
 
+  /*
   test("a) person"){
     val person = new Person("A")
     person.name should be("A")
   }
 
-  /*
   test("b) hi metode"){
     val person = new Person("A")
     person.hi("B") should be("Hi B, my name is A")

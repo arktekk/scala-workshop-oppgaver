@@ -12,16 +12,16 @@ I denne oppgaven skal vi se på Scala's støtte for objekt-orientering. Vi skal 
 Start med å verifiser at du får startet sbt og kjørt tester som forventet. 
 
 1) Start sbt med start-scriptet som ligger i roten av oppgaven. 
-2) Foreløpig vil ingen tester kjøre grønt, men sjekk med `test-only oppgave1.PersonSuite`. 
+2) Foreløpig vil ingen tester kjøre, men sjekk med `test-only oppgave1.PersonSuite`. 
 
-Nå skal vi gradvis implementere alt som skal til for å få alle testene i `oppgave1.PersonSuite` til å kjøre grønt. Foreløpig er kun en av testene kommentert inn. 
+Nå skal vi gradvis implementere alt som skal til for å få alle testene i `oppgave1.PersonSuite` til å kjøre grønt. Foreløpig er ingen av testene kommentert inn. 
 
-3) Vi skal implementere alt i filen oppgave1.Person (ligger i src/main/scala/oppgave1/Person.scala). Følg instruksene som ligger i denne filen.
+3) Vi skal implementere alt i filen oppgave1.Person (ligger i src/main/scala/oppgave1/Person.scala). Følg instruksene som ligger i denne filen. Kommenter inn en og en test i PersionSuite for hvert av stegene
 
 Tips:
 
-* Kommenter kun inn en og en test 
 * Se på slidene dere har fått utdelt
+* Spør instrukstørene
 
 Diskusjonspunkter:
 

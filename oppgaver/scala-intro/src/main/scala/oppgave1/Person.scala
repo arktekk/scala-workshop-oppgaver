@@ -18,28 +18,3 @@ package oppgave1
  *
  * g) Lag companion object med "factory metoder" for å opprette en Friendly og "vanlig" Person
  */
-
-trait Hi {
-
-  def name:String
-
-  def hi(who:String):String = "Hi " + who + ", my name is " + name
-
-  def upperHi(who:String) = hi(who).toUpperCase
-}
-
-trait Friendly extends Hi {
-  import collection.mutable.ListBuffer
-
-  val friends = new ListBuffer[String]
-
-  override def hi(who: String) = if(friends.contains(who)) "Hi "+who+", what's up?" else super.hi(who)
-}
-
-class Person(val name:String) extends Hi
-
-object Person {
-  def regular(name:String) = new Person(name)
-
-  def friendly(name:String) = new Person(name) with Friendly
-}
