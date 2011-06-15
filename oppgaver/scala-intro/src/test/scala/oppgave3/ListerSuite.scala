@@ -3,7 +3,7 @@ package oppgave3
 import org.scalatest._
 import matchers.ShouldMatchers
 
-class Lister extends FunSuite with ShouldMatchers {
+class ListerSuite extends FunSuite with ShouldMatchers {
 
   import collection.mutable.ListBuffer
 

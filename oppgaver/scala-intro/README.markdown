@@ -7,14 +7,16 @@ Ikke bli sittende fast for lenge - spør instruktøren. Husk, vi skal ha det gø
 
 Oppgave 1 - Klasser, traits og objekter
 -----
-I denne oppgaven skal vi se på Scala's støtte for objekt-orientering. Vi skal definere klasser, gjøre komposisjon med traits, og definere companion objects. For dette skal vi utvikle en representasjon av en person, som hilser til alle som spør. Personen vil hilse mer vennlig til vennene sine.
+I denne oppgaven skal vi se på Scala's støtte for objekt-orientering. Vi skal definere klasser, gjøre komposisjon med traits, og definere companion objects. En av tingene vi skal se på er hvordan komposisjon kan gi oss løst koblede biter av funksjonalitet. For dette skal vi utvikle en representasjon av en person, som hilser til alle som spør. Personen vil hilse mer vennlig til vennene sine.
 
 Start med å verifiser at du får startet sbt og kjørt tester som forventet. 
 
 1) Start sbt med start-scriptet som ligger i roten av oppgaven. 
 2) Foreløpig vil ingen tester kjøre grønt, men sjekk med `test-only oppgave1.PersonSuite`. 
 
-Nå skal vi gradvis implementere alt som skal til for å få alle testene i `oppgave1.PersonSuite` til å kjøre grønt. Foreløpig er kun en av testene kommentert inn. Følg instruksene som ligger i testklassen.
+Nå skal vi gradvis implementere alt som skal til for å få alle testene i `oppgave1.PersonSuite` til å kjøre grønt. Foreløpig er kun en av testene kommentert inn. 
+
+3) Vi skal implementere alt i filen oppgave1.Person (ligger i src/main/scala/oppgave1/Person.scala). Følg instruksene som ligger i denne filen.
 
 Tips:
 
@@ -27,12 +29,12 @@ Diskusjonspunkter:
 
 Oppgave 2 - Lister
 -----
-I denne oppgaven skal vi utforske Scala's rike collection rammeverk. Som en del av dette skal vi jobbe med higher-order functions; funksjoner som tar funksjoner. Vi skal lete etter "idiomatiske" løsninger på problemene. Collection-rammeverket har mye å by på, og det er ofte en enklere måte å løse problemet på enn du kanskje ført anntar.
+I denne oppgaven skal vi utforske Scala's rike collection-rammeverk. Som en del av dette skal vi jobbe med higher-order functions; funksjoner som tar funksjoner. Vi skal lete etter "idiomatiske" løsninger på problemene. Collection-rammeverket har mye å by på, og det er ofte en enklere måte å løse problemet på enn du kanskje først antar.
 
 Vi skal ta utgangspunkt i et sett av tester, som dessverre ikke kjører som de skal. 
 
-1) Testene kan kjøres med `test-only oppgave2.Lister`
-2) Løs oppgavene som er definert i oppgave2.Lister
+1) Testene kan kjøres med `test-only oppgave2.ListerSuite`
+2) Løs oppgavene som er definert i oppgave2.ListerSuite
 
 Tips:
 

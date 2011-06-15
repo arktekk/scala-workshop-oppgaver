@@ -1,21 +1,22 @@
 package oppgave1
 
 /**
- * a) lag klassen Person som tar navn som konstruktør argument
+ * Se testklassen PersonSuite for forventet oppførsel.
  *
- * b) implementer metoden hi(who:String):String som returnerer en hilsen (se test)
+ * a) Lag klassen Person som tar navn som konstruktør argument
  *
- * c) flytt funksjonaliteten for "hi" ut i en trait "Hi"
+ * b) Implementer metoden hi(who:String):String som returnerer en hilsen
  *
- * d) Implementer metoden "hi"
+ * c) Flytt funksjonaliteten for "hi" ut i en trait "Hi"
  *
- * e) i Hi traiten, lag metoden "upperHi" som alltid svarer det samme som "hi", men i uppercase
+ * d) I Hi traiten, lag metoden "upperHi" som alltid svarer det samme som "hi", men i uppercase
  *
- * f) Lag traiten "Friendly" som extender Hi (bruk f.eks collection.mutable.ListBuffer[String] for å representere venner).
- *     override metoden "hi" så den gir en vennligere hilsen til venner.
+ * e) Lag traiten "Friendly" som extender Hi (bruk f.eks collection.mutable.ListBuffer[String] for å representere venner).
+ *    Override metoden "hi" så den gir en vennligere hilsen til venner
+ *
+ * f) Verifiser at testen "f) Friendly uppercase" kjører grønt. Hvis ikke, kan du gjenbruke eksisterende funksjonalitet?
  *
  * g) Lag companion object med "factory metoder" for å opprette en Friendly og "vanlig" Person
- *
  */
 
 trait Hi {
