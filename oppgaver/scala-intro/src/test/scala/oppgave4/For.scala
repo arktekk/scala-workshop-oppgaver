@@ -57,9 +57,9 @@ class For extends FunSuite with ShouldMatchers {
     expected should be(lengder.toSet)
   }
 
-  /* http://learnyouahaskell.com/ */
-  test("pytagoras (a^2 + b^2 = c^2) finn sidene i en rettvinklet trekant der alle sider er <= 10 og omkretsen er 24"){    
-    // a^2 skrives math.pow(a, 2)
+  test("Pytagoras (a^2 + b^2 = c^2): Finn sidene for rettvinklete trekanter der alle sider er <= 10 og omkretsen er 24"){
+
+    // Tips: a^2 skrives math.pow(a, 2)
 
     import math.pow
 

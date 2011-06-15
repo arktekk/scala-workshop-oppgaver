@@ -5,6 +5,7 @@ case class Branch(left:Tree, right:Tree) extends Tree
 case class Leaf(value:Int) extends Tree
 
 object Tree {
+
   def size(tree:Tree):Int = tree match {
     case Leaf(_) => 1
     case Branch(left, right) => size(left) + size(right)

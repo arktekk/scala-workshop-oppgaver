@@ -6,8 +6,8 @@ import matchers.ShouldMatchers
 class FPSuite extends FunSuite with ShouldMatchers {
   
   val ansatte:List[Ansatt] = 
-    Manager("Man1", 100, "Chief Managing Dude") :: 
-    Manager("Man2", 120, "Uber Chief Managing Dude") :: 
+    Manager("Man1", 100, "Chief Officer") ::
+    Manager("Man2", 120, "Second in Command") ::
     Utvikler("Dev1", 90) :: 
     Utvikler("Dev2", 110) :: Nil    
   
