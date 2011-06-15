@@ -2,6 +2,8 @@ import sbt._
 
 class Project(info:ProjectInfo) extends DefaultWebProject(info) with IdeaProject {
   
+  override def jettyWebappPath = webappPath
+  
   override def libraryDependencies = Set(
     "net.liftweb" %% "lift-webkit" % "2.3" % "compile->default" withSources,
     "org.mortbay.jetty" % "jetty" % "6.1.22" % "test->default",
