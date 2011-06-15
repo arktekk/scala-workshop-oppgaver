@@ -45,7 +45,7 @@ class FPSuite extends FunSuite with ShouldMatchers {
   test("øk lønn til managers med kronebeløp"){
     val (m, d) = split(Ansatt.økLønnForManagersMedKr(10, ansatte))    
     d should be === developers
-    m should be === (Manager("Man1", 110, "Chief Managing Dude") :: Manager("Man2", 130, "Uber Chief Managing Dude") :: Nil)
+    m should be === (Manager("Man1", 110, "Chief Officer") :: Manager("Man2", 130, "Second in Command") :: Nil)
   }
   
   test("øk lønn til developers med kronebeløp"){
@@ -57,7 +57,7 @@ class FPSuite extends FunSuite with ShouldMatchers {
   test("øk lønn til managers med prosent"){
     val (m, d) = split(Ansatt.økLønnForManagersMedProsent(10, ansatte))    
     d should be === developers
-    m should be === (Manager("Man1", 110, "Chief Managing Dude") :: Manager("Man2", 132, "Uber Chief Managing Dude") :: Nil)
+    m should be === (Manager("Man1", 110, "Chief Officer") :: Manager("Man2", 132, "Second in Command") :: Nil)
   }
   
   test("øk lønn til developers med prosent"){

@@ -1,3 +1,4 @@
 .idea
 *.iml
 boot
+lib_managed
