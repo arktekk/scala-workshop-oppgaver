@@ -3,7 +3,7 @@ package oppgave5
 import org.scalatest._
 import matchers.ShouldMatchers
 
-class PatternMatchSuite extends FunSuite with ShouldMatchers {
+class FPSuite extends FunSuite with ShouldMatchers {
   
   val ansatte:List[Ansatt] = 
     Manager("Man1", 100, "Chief Managing Dude") :: 
