@@ -140,8 +140,8 @@ class Lister extends FunSuite with ShouldMatchers {
     val sum = list.reduce((a, b) => a + b)
 
     val imperative = {
-      var i = 0
-      for(n <- list)
+      var i = list.head
+      for(n <- list.tail)
         i += n
       i
     }
@@ -176,5 +176,22 @@ class Lister extends FunSuite with ShouldMatchers {
 
     imperative should be === reversed
     reversed should be === list.reverse
+  }
+
+  val smallList = List(1,2,3)
+  test("0 to i list") {
+    val expandedList = smallList.flatMap(i => 0 to i)
+
+    val imperative = {
+      var l = List[Int]()
+      for(i <- smallList) {
+        val range = 0 to i
+        l ++= range
+      }
+      l
+    }
+
+    imperative should be === expandedList
+    expandedList should be === List(0,1,0,1,2,0,1,2,3)
   }
 }
