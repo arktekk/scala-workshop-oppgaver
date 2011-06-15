@@ -10,7 +10,7 @@ class ListerSuite extends FunSuite with ShouldMatchers {
   val list = List(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
 
   test("cons") {
-    val consed = 0 :: list
+    val consed = Nil // TODO: Implementer
 
     val imperative = {
       val buffer = list.toBuffer
@@ -23,7 +23,7 @@ class ListerSuite extends FunSuite with ShouldMatchers {
   }
 
   test("legg 1 til hvert element") {
-    val plus1 = list.map(n => n + 1)
+    val plus1 = Nil // TODO: Implementer
 
     val imperative = {
       val buffer = new ListBuffer[Int]
@@ -37,7 +37,7 @@ class ListerSuite extends FunSuite with ShouldMatchers {
   }
 
   test("multipliser hvert element med 3") {
-    val mult3 = list.map(n => n * 3)
+    val mult3 = Nil // TODO: Implementer
 
     val imperative = {
       val buffer = new ListBuffer[Int]
@@ -51,7 +51,7 @@ class ListerSuite extends FunSuite with ShouldMatchers {
   }
 
   test("alle par-tall") {
-    val even = list.filter(n => n % 2 == 0)
+    val even = Nil // TODO: Implementer
 
     val imperative = {
       val buffer = new ListBuffer[Int]
@@ -66,7 +66,7 @@ class ListerSuite extends FunSuite with ShouldMatchers {
   }
 
   test("alle odde-tall") {
-    val odd = list.filter(n => n % 2 == 1)
+    val odd = Nil // TODO: Implementer
 
     val imperative = {
       val buffer = new ListBuffer[Int]
@@ -81,7 +81,7 @@ class ListerSuite extends FunSuite with ShouldMatchers {
   }
 
   test("5 første") {
-    val fiveFirst = list.take(5)
+    val fiveFirst = Nil // TODO: Implementer
 
     val imperative = {
       val buffer = new ListBuffer[Int]
@@ -98,7 +98,7 @@ class ListerSuite extends FunSuite with ShouldMatchers {
   }
 
   test("alle unntatt de 5 første") {
-    val exceptFiveFirst = list.drop(5)
+    val exceptFiveFirst = Nil // TODO: Implementer
 
     val imperative = {
       val buffer = new ListBuffer[Int]
@@ -117,7 +117,7 @@ class ListerSuite extends FunSuite with ShouldMatchers {
   }
 
   test("par og oddetall på en gang (tips: partition)") {
-    val (even, odd) = list.partition(n => n % 2 == 0)
+    val (even, odd) = Nil -> Nil // TODO: Implementer
 
     val (imperativeOdd, imperativeEven) = {
       val odd, even = new ListBuffer[Int]
@@ -137,7 +137,7 @@ class ListerSuite extends FunSuite with ShouldMatchers {
   }
 
   test("sum") {
-    val sum = list.reduce((a, b) => a + b)
+    val sum = Nil // TODO: Implementer
 
     val imperative = {
       var i = list.head
@@ -151,7 +151,7 @@ class ListerSuite extends FunSuite with ShouldMatchers {
   }
 
   test("produkt") {
-    val prod = list.foldLeft(1)((a, b) => a * b)
+    val prod = Nil // TODO: Implementer
 
     val imperative = {
       var i = 1
@@ -165,7 +165,7 @@ class ListerSuite extends FunSuite with ShouldMatchers {
   }
 
   test("reverse") {
-    val reversed = list.foldLeft[List[Int]](Nil)((a, b) => b :: a)
+    val reversed = Nil // TODO: Implementer
 
     val imperative = {
       var l = List[Int]()
@@ -180,7 +180,7 @@ class ListerSuite extends FunSuite with ShouldMatchers {
 
   val smallList = List(1,2,3)
   test("0 to i list") {
-    val expandedList = smallList.flatMap(i => 0 to i)
+    val expandedList = Nil // TODO: Implementer
 
     val imperative = {
       var l = List[Int]()

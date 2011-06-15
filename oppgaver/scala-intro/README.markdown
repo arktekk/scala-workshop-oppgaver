@@ -45,7 +45,7 @@ Oppgave 3 - Lister
 -----
 I denne oppgaven skal vi utforske Scala's rike collection-rammeverk. Som en del av dette skal vi jobbe med higher-order functions; funksjoner som tar funksjoner. Vi skal lete etter "idiomatiske" løsninger på problemene. Collection-rammeverket har mye å by på, og det er ofte en enklere måte å løse problemet på enn du kanskje først antar.
 
-Vi skal ta utgangspunkt i et sett av tester, som dessverre ikke kjører. Målet er å få testene til å kjøre grønt.
+Vi skal ta utgangspunkt i et sett av tester, som dessverre ikke kjører. Målet er å få testene til å kjøre grønt. Stedene man skal gjøre endringer er markert med TODOs.
 
 1) Testene kan kjøres med `test-only oppgave3.ListerSuite`
 2) Løs oppgavene som er definert i oppgave3.ListerSuite
