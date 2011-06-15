@@ -2,3 +2,5 @@ lib_managed/
 .idea/
 *.iml
 .DS_Store
+target
+boot
