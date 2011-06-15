@@ -12,15 +12,23 @@ class Oppgave4Suite extends FunSuite with ShouldMatchers {
   
   /* A */
   
-  for((dyr, sier) <- dyretSier)
+  for((dyr, sier) <- dyretSier){
     test(dyr + " skal si " + sier){
       oppgave4.hvaSier(dyr) should be(Some(sier))
     }
+    test(dyr + " skal også si " + sier.toUpperCase){
+      oppgave4.HVA_SIER(dyr) should be(Some(sier.toUpperCase))
+    }
+  }
     
   test("ukjent dyr sier None"){
     dyretSier.keys.foreach(k => oppgave4.hvaSier("ikkeEn"+k) should be(None))
-  }
+  }    
   
+  test("ukjent dyr SIER None"){
+    dyretSier.keys.foreach(k => oppgave4.HVA_SIER("ikkeEn"+k) should be(None))
+  }
+
   /* B */
   
   test("Dog spiser Meat"){
