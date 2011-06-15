@@ -27,6 +27,20 @@ Diskusjonspunkter:
 
 * Hvordan ville man gjort dette i Java?
 
+Oppgave 2 - Map og Option
+-----
+Nå skal vi se nærmere på Map i Scala, og hvordan denne bruker Option for å sikre korrekt håndtering av både kjente og ukjente nøkler. Vi skal også utforske hvordan vi kan jobbe med Option.
+
+Vi skal jobbe med noen sultne dyr, sjekke hva de sier og hva de spiser. Vi tar utgangspunkt i en full suite av tester, og skal implementere tjenesten SultneDyr.
+
+1) I klassen oppgave2.SultneDyr er det et sett av metoder som ikke er ferdig implementert. Det står beskrevet i kommentarer hva de er ment å gjøre. Se også på test suiten oppgave2.SultneDyrSuite
+2) Oppgaven er ferdig når alle testene i SultneDyrSuite kjører grønt
+
+Diskusjonspunkter:
+
+* Option vs null
+* Hva har dette å si for typesikkerheten?
+
 Oppgave 2 - Lister
 -----
 I denne oppgaven skal vi utforske Scala's rike collection-rammeverk. Som en del av dette skal vi jobbe med higher-order functions; funksjoner som tar funksjoner. Vi skal lete etter "idiomatiske" løsninger på problemene. Collection-rammeverket har mye å by på, og det er ofte en enklere måte å løse problemet på enn du kanskje først antar.

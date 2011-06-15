@@ -46,7 +46,7 @@ class SultneDyrSuite extends FunSuite with ShouldMatchers {
   /* C */
   test("Hva spiser de dyrene vi vet om"){
     val expected = List("Dog sier Woof og liker Meat", "Cat sier Meow og liker Fish", "Cow sier Mooh og liker Grass")
-    sultneDyr.hvaSpiserDeViVetOm("ukjent1" :: "unkjent2" :: dyretSier.keys.toList) should be === expected
+    sultneDyr.hvaSpiserDeViVetOm("ukjent1" :: "ukjent2" :: dyretSier.keys.toList) should be === expected
   }
   
   /* D */
