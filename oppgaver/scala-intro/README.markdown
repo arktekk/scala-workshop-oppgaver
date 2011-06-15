@@ -12,9 +12,9 @@ I denne oppgaven skal vi se på Scala's støtte for objekt-orientering. Vi skal 
 Start med å verifiser at du får startet sbt og kjørt tester som forventet. 
 
 1) Start sbt med start-scriptet som ligger i roten av oppgaven. 
-2) Foreløpig vil ingen tester kjøre grønt, men sjekk med `test-only oppgave1.Oppgave1`. 
+2) Foreløpig vil ingen tester kjøre grønt, men sjekk med `test-only oppgave1.PersonSuite`. 
 
-Nå skal vi gradvis implementere alt som skal til for å få alle testene i `oppgave1.Oppgave1` til å kjøre grønt. Foreløpig er kun en av testene kommentert inn. Følg instruksene som ligger i testklassen.
+Nå skal vi gradvis implementere alt som skal til for å få alle testene i `oppgave1.PersonSuite` til å kjøre grønt. Foreløpig er kun en av testene kommentert inn. Følg instruksene som ligger i testklassen.
 
 Tips:
 
@@ -24,7 +24,6 @@ Tips:
 Diskusjonspunkter:
 
 * Hvordan ville man gjort dette i Java?
-* ... 
 
 Oppgave 2 - Lister
 -----
