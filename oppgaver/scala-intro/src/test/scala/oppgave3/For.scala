@@ -5,8 +5,7 @@ import matchers.ShouldMatchers
 
 class For extends FunSuite with ShouldMatchers {
   /* http://learnyouahaskell.com/ */
-  test("pytagoras (a^2 + b^2 = c^2) finn sidene i en rettvinklet trekant der alle sider er <= 10 og omkretsen er 24"){
-
+  test("pytagoras (a^2 + b^2 = c^2) finn sidene i en rettvinklet trekant der alle sider er <= 10 og omkretsen er 24"){    
     // a^2 skrives math.pow(a, 2)
 
     import math.pow
