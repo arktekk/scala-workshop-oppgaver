@@ -33,7 +33,7 @@ Nå skal vi se nærmere på Map i Scala, og hvordan denne bruker Option for å s
 
 Vi skal jobbe med noen sultne dyr, sjekke hva de sier og hva de spiser. Vi tar utgangspunkt i en full suite av tester, og skal implementere tjenesten SultneDyr.
 
-1) I klassen oppgave2.SultneDyr er det et sett av metoder som ikke er ferdig implementert. Det står beskrevet i kommentarer hva de er ment å gjøre. Se også på test suiten oppgave2.SultneDyrSuite
+1) I klassen oppgave2.SultneDyr er det et sett av metoder som ikke er ferdig implementert. Det står beskrevet i kommentarer hva de er ment å gjøre. Se også på test-suiten oppgave2.SultneDyrSuite
 2) Kjør testene med `test-only oppgave2.SultneDyrSuite`. Oppgaven er ferdig når alle testene kjører grønt
 
 Diskusjonspunkter:

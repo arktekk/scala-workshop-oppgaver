@@ -11,7 +11,6 @@ class SultneDyrSuite extends FunSuite with ShouldMatchers {
   val sultneDyr = new SultneDyr(dyretSier, berOmMat)
   
   /* A */
-  
   for((dyr, sier) <- dyretSier){
     test(dyr + " skal si " + sier){
       sultneDyr.hvaSier(dyr) should be(Some(sier))
@@ -30,7 +29,6 @@ class SultneDyrSuite extends FunSuite with ShouldMatchers {
   }
 
   /* B */
-  
   test("Dog spiser Meat"){
     sultneDyr.hvaSpiser("Dog") should be(Some("Meat"))
   }
