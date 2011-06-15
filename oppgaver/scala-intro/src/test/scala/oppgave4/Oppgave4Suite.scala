@@ -41,4 +41,11 @@ class Oppgave4Suite extends FunSuite with ShouldMatchers {
     oppgave4.hvaSpiserDeViVetOm("ukjent1" :: "unkjent2" :: dyretSier.keys.toList) should be === expected
   }
   
+  /* D */
+  test("HVA_SPISER"){
+    oppgave4.HVA_SPISER("Dog") should be(Some("MEAT"))
+    oppgave4.HVA_SPISER("Cat") should be(Some("FISH"))
+    oppgave4.HVA_SPISER("Horse") should be(None)
+  }
+  
 }

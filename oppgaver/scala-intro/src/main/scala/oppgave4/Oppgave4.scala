@@ -16,10 +16,14 @@ class Oppgave4(dyretSier:Map[String, String], berOmMat:Map[String, String]) {
       spiser <- berOmMat.get(sier)
     } yield spiser
   
+  // sys.error("returner List med en setning som beskriver hva de dyrene vi kjenner til sier og spiser")
   def hvaSpiserDeViVetOm(dyrene:List[String]):List[String] =
     for{
       dyr <- dyrene
       sier <- dyretSier.get(dyr)
       mat <- berOmMat.get(sier)
     } yield dyr + " sier " + sier + " og liker " + mat
+    
+  // sys.error("returner Some med uppercase hva dyret spiser om det finnes, eller None hvis det ikke finnes (benytt hvaSpiser, og toUpperCase metoden til String)")
+  def HVA_SPISER(dyr:String):Option[String] = hvaSpiser(dyr).map(n => n.toUpperCase)
 }
