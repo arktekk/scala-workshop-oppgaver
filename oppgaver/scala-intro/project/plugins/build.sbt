@@ -8,4 +8,3 @@ libraryDependencies <<= (libraryDependencies, sbtVersion) { (deps, version) =>
   deps :+ ("com.typesafe.sbteclipse" %% "sbteclipse" % "1.1" extra("sbtversion" -> version))
 }
 
-libraryDependencies += "org.sbtidea" %% "xsbt-idea" % "0.1"
