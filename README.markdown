@@ -8,8 +8,8 @@ Alle øvelsene bruker simple-build-tool (sbt). Det ligger med en egen launcher s
 
 Under er noen vanlig sbt-kommandoer.
 
-* update (Hente alle avhengigheter. OBS: Må kjøres før man kan begynne å jobbe)
-* idea (Generer IntelliJ IDEA prosjektfiler. Tilsvarende Maven's idea:idea)
+* gen-idea (Generer IntelliJ IDEA prosjektfiler. Tilsvarende Maven's idea:idea)
+* eclipse (Generer Eclipse prosjektfiler)
 * compile
 * clean
 * jetty-run
