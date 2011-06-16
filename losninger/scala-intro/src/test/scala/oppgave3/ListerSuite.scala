@@ -139,6 +139,8 @@ class ListerSuite extends FunSuite with ShouldMatchers {
   test("sum") {
     val sum = list.reduce((a, b) => a + b)
 
+    // list.sum
+
     val imperative = {
       var i = list.head
       for(n <- list.tail)
@@ -153,6 +155,8 @@ class ListerSuite extends FunSuite with ShouldMatchers {
   test("produkt") {
     val prod = list.foldLeft(1)((a, b) => a * b)
 
+    // list.product
+
     val imperative = {
       var i = 1
       for(n <- list)
@@ -166,6 +170,8 @@ class ListerSuite extends FunSuite with ShouldMatchers {
 
   test("reverse") {
     val reversed = list.foldLeft[List[Int]](Nil)((a, b) => b :: a)
+
+    // list.reverse
 
     val imperative = {
       var l = List[Int]()
