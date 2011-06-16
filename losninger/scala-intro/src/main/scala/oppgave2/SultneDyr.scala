@@ -28,19 +28,16 @@ class SultneDyr(dyretSier:Map[String, String], berOmMat:Map[String, String]) {
   
   // TODO: Returner Some med hva dyret spiser om det finnes, eller None hvis det ikke finnes
   def hvaSpiser(dyr:String):Option[String] = //sys.error("todo")
-    for{
-      sier <- dyretSier.get(dyr)
-      spiser <- berOmMat.get(sier)
-    } yield spiser
-  
+    dyretSier.get(dyr).flatMap(
+      sier => berOmMat.get(sier))
+
   // TODO: Returner List med en setning som beskriver hva de dyrene vi kjenner til sier og spiser
   def hvaSpiserDeViVetOm(dyrene:List[String]):List[String] = // sys.error("todo")
-    for{
-      dyr <- dyrene
-      sier <- dyretSier.get(dyr)
-      mat <- berOmMat.get(sier)
-    } yield dyr + " sier " + sier + " og liker " + mat
-    
+    dyrene.flatMap(dyr =>
+      dyretSier.get(dyr).flatMap(sier =>
+        berOmMat.get(sier).map(mat =>
+          dyr + " sier " + sier + " og liker " + mat)))
+
   // TODO: Returner Some med uppercase hva dyret spiser om det finnes, eller None hvis det ikke finnes, (benytt metoden .toUpperCase på String)
   def HVA_SPISER(dyr:String):Option[String] = // sys.error
     hvaSpiser(dyr).map(n => n.toUpperCase)
